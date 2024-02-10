@@ -51,12 +51,23 @@ transform: scaleX(1);
     color: #f53163;
     
 }
-.navbar-brand{
-   color: white;
-}
+
     </style>
+
 </head>
 <body>
+    <!-- <script>
+    function check() {
+   var fname=document.getElementById("firstName").value.trim();
+   var lname=document.getElementById("lastName").value.trim();
+   var address=document.getElementById("residentialAddress").value.trim();
+   var email=document.getElementById("email").value.trim();
+   
+   if (fname===""||lname===""|| address===""||email==="") {
+      alert("Please fill out all the entries");
+   }
+}
+    </script> -->
 
     <nav class="navbar navbar-expand-md"  style="color: white;">
         <a href="" class="navbar-brand fs-3 ms-3"><img src="Astrisk2 Logo.png" height="50px" width="120px"></a>
@@ -78,14 +89,14 @@ transform: scaleX(1);
     <div class="row justify-content-center">
         <div class="col-md-6 form-container">
             <h2 class="text-center mb-4">Register with Asterisk</h2>
-            <form>
+            <form id="contactForm">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="firstName">First Name</label>
                         <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="lastName">Last Name</label>
+                        <label for="lastName" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>Last Name</label>
                         <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
                     </div>
                 </div>
@@ -107,13 +118,21 @@ transform: scaleX(1);
                       
                     </select>
                     <br>
-                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                <button type="submit" class="btn btn-primary btn-block" onclick="check()">Register</button>
             </form>
         </div>
     </div>
 </div>
-
-
+<center><footer style="color: aliceblue;">
+    <p>&copy; 2024 Asterisk. All rights reserved.</p>
+    <p>
+        <a href="https://github.com/yourusername" target="_blank" style="text-decoration: none; color: #f53163;" ><i class="fa fa-github" style="text-decoration: none; color: #f53163; font-size: x-large;"></i></a> |
+        <a href="https://wa.me/1234567890" target="_blank" style="text-decoration: none; color: #f53163;"><i class="fa fa-linkedin-square" style="text-decoration: none; color: #f53163; font-size: x-large;"></i></a>
+    </p>
+    <hr class="white-hr">
+</footer></center>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./mail.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

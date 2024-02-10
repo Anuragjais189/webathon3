@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<style>
+       .navbar{
+    color: white;
+    z-index: 2;
+}
+.nav-link{
+    color: white;
+    position: relative;
+    font-size: large;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+transform: scaleX(0);
+width: 100%;
+height: 2px;
+background: #f53163;
+transition: all 0.6S ease;
+bottom: 0;
+left: 0;
+}
+.nav-link:hover::before{
+transform: scaleX(1);
+}
+.nav-link:hover{
+    color: #f53163;
+    
+}
+.navbar-brand{
+   color: white;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(166% + 1.3px);
+    height: 500px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: rgb(58, 55, 55);
+    z-index: -1;
+}
+.container{
+    z-index: inherit;
+}
+.mainheading{
+    font-size: 100px;
+    background-image:url(backgroundtext.gif);
+    background-size: 100% auto;
+    display: flex;
+justify-content: center;
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   animation: animate 30s alternate infinite;
+   font-weight: 600;
+-webkit-text-stroke: 2px #ccc ;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-md"  style="color: white;">
+        <a href="" class="navbar-brand fs-3 ms-3"><img src="Astrisk2 Logo.png" height="50px" width="120px"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+        <i class="bx bx-menu" style="color: aliceblue;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="btn" style="color: white;">
+        <ul class="navbar-nav ms-auto" style="color: white;">
+       <li class="nav-item" ><a href="home.html" class="nav-link mx-3">Home</a></li>
+       <li class="nav-item" ><a href="registration.html" class="nav-link mx-3">Register</a></li>
+       <li class="nav-item" ><a href="mainimage.png" class="nav-link mx-3"> Quiz</a></li>
+       <li class="nav-item" ><a href="#" class="nav-link mx-3">About me</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="mainheading">
+Interior Designer
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="maincard">
+                <div class="card1">
+                    <div class="heading-inner">
+                        Requirements 
+                    </div>
+                    <div class="des">
+                        The requirement for interior design stems from the intrinsic human need for functional, aesthetically pleasing, and well-utilized spaces. Interior design plays a crucial role in creating environments that enhance the quality of life, productivity, and well-being of occupants. The goal of interior design is to optimize the functionality, layout, and aesthetics of interior spaces, taking into account factors such as ergonomics, sustainability, and cultural context.
+
+
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="maincard">
+                <div class="card1">
+                    <div class="heading-inner">
+                        Future Scope
+                    </div>
+                    <div class="des">
+                        The future scope of interior design is characterized by innovation, sustainability, and a focus on human-centered design principles. As technology continues to advance, interior designers will embrace new tools, materials, and techniques to create environments that meet the evolving needs of occupants and address global challenges such as climate change and urbanization.
+                </div></div>
+                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="maincard">
+                <div class="card1">
+                    <div class="heading-inner">
+                        Importance
+                    </div>
+                    <div class="des">
+
+                        Interior design plays a critical role in shaping human experiences, emotions, and behaviors within the built environment. Well-designed interior spaces have the power to evoke positive emotions, enhance productivity, and foster a sense of belonging and identity. From homes and offices to retail stores and public spaces, interior design influences how people interact with and perceive their surroundings.
+                </div>
+                </div>
+        </div>
+    </div>
+   </div>
+<div class="wave" style="z-index: -1;">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div>
+<center><footer style="color: aliceblue;">
+    <p>&copy; 2024 Asterisk. All rights reserved.</p>
+    <p>
+        <a href="https://github.com/yourusername" target="_blank" style="text-decoration: none; color: #f53163;" ><i class="fa fa-github" style="text-decoration: none; color: #f53163; font-size: x-large;"></i></a> |
+        <a href="https://wa.me/1234567890" target="_blank" style="text-decoration: none; color: #f53163;"><i class="fa fa-linkedin-square" style="text-decoration: none; color: #f53163; font-size: x-large;"></i></a>
+    </p>
+    <hr class="white-hr">
+</footer></center>
+</body>
+</html>
